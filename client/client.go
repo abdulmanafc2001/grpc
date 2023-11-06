@@ -22,6 +22,7 @@ func main() {
 	}
 
 	// callSayHelloServerSteraming(cli,names)
-	callClientStreaming(cli,names)
+	// callClientStreaming(cli,names)
+	callBiDirectionalStreaming(cli,names)
 
 }
