@@ -17,8 +17,16 @@ message Names {
     repeated string name = 1;
 }
 
+message Messages {
+    repeated string message = 1;
+}
+
 service HelloService {
     rpc SayHello(HelloRequest) returns (HelloResponse);
 
     rpc ServerStreaming(Names) returns (stream HelloResponse);
+
+    rpc ClientStreaming(stream HelloRequest) returns (Messages);
+
+    rpc BiDirectionalStreaming(stream HelloRequest) returns (stream HelloResponse);
 }

@@ -21,6 +21,7 @@ func main() {
 		Name: []string{"Manaf","Alice","Bob"},
 	}
 
-	callSayHelloServerSteraming(cli,names)
+	// callSayHelloServerSteraming(cli,names)
+	callClientStreaming(cli,names)
 
 }
